@@ -88,7 +88,6 @@ void Server::processingClient(CSocket &client) {
 void Server::sendProcessList(CSocket& client) {
 
 	vector<ProcessInfo*> *list = _processDispatcher->getProcesses();
-	//vector<ProcessInfo*> *list = new vector<ProcessInfo*>;
 
 	for (vector<ProcessInfo*>::iterator info = list->begin();
 		info != list->end(); ++info) {
